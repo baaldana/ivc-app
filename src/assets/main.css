@@ -71,12 +71,13 @@ button-39:focus-visible {
 
 .wrapper {
   margin: auto;
-  width: 50%;
+  width: inherit;
   padding: 10px;
   text-align: center;
 }
 
 .wrapper ul {
+  width: inherit;
   list-style: none;
   padding: 0;
   margin: 0;
