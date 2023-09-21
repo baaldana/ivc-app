@@ -14,6 +14,7 @@
           <li>lavinacordillera@gmail.com</li>
       </ul>
       <button @click="copy">Copiar datos de transferencia</button>
+      <p id="success-message" hidden="hidden">¡Datos copiados!</p>
     </div>
   </div>
     
@@ -30,7 +31,7 @@ export default {
   methods: {
     copy() {
       navigator.clipboard.writeText(this.account_data)
-      alert('Datos copiados')
+      document.getElementById("success-message").hidden = null
     }
   }
 }
