@@ -1,5 +1,6 @@
 <template>
-  <header>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <div class="main_container">
     <img alt="IVClogo" class="logo" src="./assets/ivc-logo2.png" height="125" />
 
     <div class="wrapper">
@@ -14,11 +15,8 @@
       </ul>
       <button @click="copy">Copiar datos de transferencia</button>
     </div>
-  </header>
-
-  <main>
-    <TheWelcome />
-  </main>
+  </div>
+    
 </template>
 
 <script>
