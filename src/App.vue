@@ -1,14 +1,18 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
-</script>
-
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
+    <img alt="IVClogo" class="logo" src="./assets/ivc-logo2.png" height="125" />
 
     <div class="wrapper">
-      <HelloWorld msg="You did it!" />
+      <h1>Datos de transferencia</h1>
+      <ul>
+          <li>Iglesia Viña Cordillera</li>
+          <li>65135458-7</li>
+          <li>Banco Santander</li>
+          <li>Cuenta Corriente</li>
+          <li>72244532</li>
+          <li>lavinacordillera@gmail.com</li>
+      </ul>
+      <button @click="copy">Copiar datos de transferencia</button>
     </div>
   </header>
 
@@ -16,6 +20,23 @@ import TheWelcome from './components/TheWelcome.vue'
     <TheWelcome />
   </main>
 </template>
+
+<script>
+
+export default {
+  data() {
+    return {
+      account_data: "Iglesia Viña Cordillera 65135458-7 Banco Santander Cuenta Corriente 72244532 lavinacordillera@gmail.com"
+    };
+  },
+  methods: {
+    copy() {
+      navigator.clipboard.writeText(this.account_data)
+    }
+  }
+}
+
+</script>
 
 <style scoped>
 header {
@@ -39,8 +60,8 @@ header {
   }
 
   header .wrapper {
-    display: flex;
-    place-items: flex-start;
+    display: block;
+    place-items: center;
     flex-wrap: wrap;
   }
 }
