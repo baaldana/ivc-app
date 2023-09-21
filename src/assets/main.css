@@ -86,3 +86,8 @@ button-39:focus-visible {
 .logo {
   width: inherit;
 }
+
+#success-message {
+  color: greenyellow;
+  font-size: x-large;
+}
