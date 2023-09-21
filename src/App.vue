@@ -24,12 +24,13 @@
 export default {
   data() {
     return {
-      account_data: "Iglesia Viña Cordillera 65135458-7 Banco Santander Cuenta Corriente 72244532 lavinacordillera@gmail.com"
+      account_data: "Iglesia Viña Cordillera\n65.135.458-7\nBanco Santander\nCuenta Corriente\n0-000-7224453-2\nlavinacordillera@gmail.com"
     };
   },
   methods: {
     copy() {
       navigator.clipboard.writeText(this.account_data)
+      alert('Datos copiados')
     }
   }
 }
