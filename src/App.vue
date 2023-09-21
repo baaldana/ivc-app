@@ -7,10 +7,10 @@
       <h1>Datos de transferencia</h1>
       <ul>
           <li>Iglesia Viña Cordillera</li>
-          <li>65135458-7</li>
+          <li>65.135.458-7</li>
           <li>Banco Santander</li>
           <li>Cuenta Corriente</li>
-          <li>72244532</li>
+          <li>0-000-7224453-2</li>
           <li>lavinacordillera@gmail.com</li>
       </ul>
       <button @click="copy">Copiar datos de transferencia</button>
