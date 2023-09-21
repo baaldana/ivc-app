@@ -1,7 +1,7 @@
 <template>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <div class="main_container">
-    <img alt="IVClogo" class="logo" src="./assets/ivc-logo2.png" height="125" />
+    <img alt="IVClogo" class="logo" src="./assets/ivc-logo2.png"/>
 
     <div class="wrapper">
       <h1>Datos de transferencia</h1>
